@@ -1,0 +1,16 @@
+# Production
+dist
+.solid
+.output
+.vercel
+
+# Dependencies
+node_modules
+
+# Envrionment Variables
+.env*
+!.env.example
+
+# Miscs
+.DS_Store
+Thumbs.db
