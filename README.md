@@ -1,6 +1,16 @@
 # OBS Interactive Overlay
 
-> A SolidStart web app that I use as source for my OBS overlay.
+> Web sources for my OBS overlay.
+
+You can see a [deployed demo here](https://stream-overlay.vexcited.ml/).
+
+## Public API
+
+You can get direct access to data using the public API under `/api` routes.
+
+### `GET /api/spotify_currently_playing`
+
+Get informations about the currently playing song on Spotify. Used in the `/spotify` page.
 
 ## Development
 
