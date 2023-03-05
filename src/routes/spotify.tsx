@@ -1,7 +1,5 @@
 import type { ApiSpotifyCurrentlyPlayingResponse } from "~/types/api";
-
-import { Show, onCleanup, createSignal } from "solid-js";
-import { useLocation } from "solid-start";
+import { Show, onMount, onCleanup, createSignal } from "solid-js";
 
 const spotify_fetcher = async () => {
   console.info("refetching spotify data.");
@@ -24,20 +22,17 @@ export default function SpotifyPage () {
     }
   }
 
+  onMount(() => {
   // Run on first mount.
   refetch();
 
   // Run every 2.5s.
   const interval = setInterval(() => refetch(), 2500);
   onCleanup(() => clearInterval(interval));
+  });
 
   return (
-    <div class="flex h-fit max-h-screen w-screen p-4 rounded-2xl"
-      style={{
-        // "background": "#2E3440",
-        
-      }}
-    >
+    <div class="flex h-fit max-h-screen w-screen p-4 rounded-2xl">
       <main class="flex gap-12 w-full">
         <Show when={spotify()?.success}>
           <img
@@ -67,7 +62,6 @@ export default function SpotifyPage () {
               </div>
             </div>
           </div>
-
         </Show>
       </main>
     </div>
