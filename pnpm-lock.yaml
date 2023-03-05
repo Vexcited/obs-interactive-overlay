@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/poppins': ^4.5.10
   '@solidjs/meta': ^0.28.2
   '@solidjs/router': ^0.7.0
   '@types/node': ^18.14.6
@@ -14,6 +15,7 @@ specifiers:
   vite: ^4.1.4
 
 dependencies:
+  '@fontsource/poppins': 4.5.10
   '@solidjs/meta': 0.28.2_solid-js@1.6.11
   '@solidjs/router': 0.7.0_solid-js@1.6.11
   solid-js: 1.6.11
@@ -1311,6 +1313,10 @@ packages:
     os: [win32]
     requiresBuild: true
     optional: true
+
+  /@fontsource/poppins/4.5.10:
+    resolution: {integrity: sha512-oYZVHsnlwV3VWM1SE/m6SUxVh0QLk5+2wB+lBiXcI7N/0KVQWmV9YykaPqfJHBLvmdya+MAOnv+BQHeLU1vOOw==}
+    dev: false
 
   /@hapi/hoek/9.3.0:
     resolution: {integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ==}
